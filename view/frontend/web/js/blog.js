@@ -1,6 +1,7 @@
 (function () {
     'use strict';
 
+    // copy of magefan/module-blog/view/frontend/web/js/magefan-comments.js
     $.widget('magefanBlogComments', {
         component: 'Magefan_Blog/js/magefan-comments',
         create: function () {
