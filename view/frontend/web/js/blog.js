@@ -1,6 +1,11 @@
 (function () {
     'use strict';
 
+    $(document).on('click', '.mfblog-contents .mfblog-contents-toggle', function () {
+        $(this).text($(this).text() === $t('hide') ? $t('show') : $t('hide'));
+        $('.mfblog-contents .mfblog-contents-toc').toggle();
+    });
+
     // copy of magefan/module-blog/view/frontend/web/js/magefan-comments.js
     $.widget('magefanBlogComments', {
         component: 'Magefan_Blog/js/magefan-comments',

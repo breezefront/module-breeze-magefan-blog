@@ -112,4 +112,43 @@
         .breeze-text-sm();
         color: @muted__color;
     }
+
+    // magefan/module-blog-extra
+    .mfblog-contents {
+        padding: @3 @5;
+        margin-bottom: @4;
+        .border-left(3px solid @divider__color);
+        .breeze-text-base();
+        > p {
+            margin: 0 !important;
+        }
+        .mfblog-contents-header {
+            font-weight: 500;
+            .breeze-text-xl();
+        }
+        .mfblog-contents-toc {
+            margin-top: @2;
+            margin-bottom: -@3;
+        }
+        ol {
+            counter-reset: item;
+        }
+        li {
+            counter-increment: item;
+        }
+        ol ol > li::marker {
+            content: counters(item, '.') ' ';
+        }
+    }
+}
+
+& when not (@critical) {
+    .mfblog-contents {
+        .mfblog-contents-toggle {
+            cursor: pointer;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
 }
