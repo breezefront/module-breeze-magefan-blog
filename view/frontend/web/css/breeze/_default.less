@@ -136,14 +136,21 @@
             margin-top: @3;
             margin-bottom: -@3;
         }
+    }
+    .mfblog-contents,
+    .widget.block-contents {
         ol {
-            counter-reset: item;
+            &:extend(.breeze-prose ol.nested-counter all);
         }
-        li {
-            counter-increment: item;
+    }
+    .widget.block-contents ol {
+        .padding-left(@6);
+        list-style: auto;
+        a {
+            .breeze-link();
         }
-        ol ol > li::marker {
-            content: counters(item, '.') ' ';
+        li::marker {
+            &:extend(.breeze-prose li::marker all);
         }
     }
 }
