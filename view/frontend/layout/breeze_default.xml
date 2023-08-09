@@ -13,6 +13,12 @@
                                     <param name="path">mfblog/general/enabled</param>
                                 </item>
                             </item>
+                            <item name="Magefan_Blog/js/lib/mfblogunveil" xsi:type="array">
+                                <item name="path" xsi:type="string">Magefan_Blog/js/lib/mfblogunveil</item>
+                                <item name="enabled" xsi:type="helper" helper="Swissup\Breeze\Helper\Config::isEnabled">
+                                    <param name="path">mfblog/general/enabled</param>
+                                </item>
+                            </item>
                         </item>
                     </item>
                 </argument>
