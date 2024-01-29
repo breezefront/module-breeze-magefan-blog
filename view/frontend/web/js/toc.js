@@ -1,10 +1,7 @@
 define([
-    'uiComponent',
     'mage/translate'
-], function (Component, $t) {
+], function ($t) {
     'use strict';
-
-    Component.register('Magefan_Blog/js/magefan-comments');
 
     $(document).on('click', '.mfblog-contents .mfblog-contents-toggle', function () {
         $(this).text($(this).text() === $t('hide') ? $t('show') : $t('hide'));
