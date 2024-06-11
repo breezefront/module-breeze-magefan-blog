@@ -2,7 +2,7 @@
     "name": "swissup/module-breeze-magefan-blog",
     "description": "Magefan's Blog integration with Breeze Frontend",
     "type": "magento2-module",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "license": "OSL-3.0",
     "require": {
         "swissup/module-breeze": "^2.14.3"
